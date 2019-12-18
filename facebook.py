@@ -29,10 +29,19 @@ Ron.get_userInfo()
 Ron.remove_friend("memebro@gmail.com")
 Ron.get_userInfo()
 
-nevermind=input("Hello there, press any button to continue")
+nevermind=input("Hello there, press any button to continue ")
 while True:
 	print("Are you either Ron or Shahar?")
-	answer=input("")
-	answer.upper()
-	if answer=="YES":
-		print("hi")
+	answer=input("Please answer with either yes or no ")
+	
+	if answer=="YES" or answer=="yes":
+		print("Hi "+self.name)
+		quit()
+	else:
+		print("Ok then, let's make a new user profile")
+		name=input("What is your name? ")
+		email=input("What is your email? ")
+		password=inpot("What password do you want to have? ")
+		name=User(name, email, password)
+
+	

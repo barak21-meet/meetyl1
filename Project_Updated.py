@@ -1,3 +1,4 @@
+"""
 f=open("NewFile.txt","w+")
 f.write("Text")
 f.close()
@@ -56,6 +57,10 @@ print("")
 print("")
 print("")
 print("")
+"""
+print("")
+print("Welcome to BNK! The first data base created by Barak Natan Kuchinsky, Enjoy While you can")
+print("")
 a=1
 
 users1=open("users1.txt","w+")
@@ -77,7 +82,7 @@ users1.close()
 post_list=[]
 while a>0:
 	answer=input("Do you have a user or do you want to sign up? answer with either log to log into your account or sign to sign up\n")
-	if answer=="sign":
+	if answer=="sign" or answer=="Sign" or answer=="sign up" or answer=="Sign up" or answer=="signup":
 		print("What is your name?")
 		name=input()
 		print("What is your email?")
@@ -187,11 +192,12 @@ while a>0:
 					print("")
 					move_on=input("Press Enter to continue")
 				else:
-					print("Thank you for using this program")
+					print("Thank you for using my program, BNK")
+					print("Hope to see you soon")
 					quit()
 			
 		#a-=1
-	elif answer=="log":
+	elif answer=="log" or answer=="Log" or answer=="log in" or answer=="Log in" or answer=="login":
 		print("What is your username?")
 		name=input()
 		print("What is your password?")
@@ -272,7 +278,8 @@ while a>0:
 					print("")
 					move_on=input("Press Enter to continue")
 				else:
-					print("Thank you for using this program")
+					print("Thank you for using my program, BNK")
+					print("Hope to see you soon")
 					quit()
 		else:
 			print("Not found")
@@ -285,16 +292,9 @@ while a>0:
 	else:
 		print("I didn't understand this answer, I only take log or sign as an answer. please answer again")
 		print("")
-#I
-#just
-#Wanted
-#to
-#make
-#it
-#300
-#lines
-#of
-#code
+#I just wanted
+#to make it
+#300 lines of code
 #so,
 #Here it is!!!
-print("working")
+print("Hope to see you soon") #BTW this line of code never runs...

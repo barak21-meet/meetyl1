@@ -1,0 +1,8 @@
+
+['Barak has posted: Hi! This is my first post!!!']
+
+['Roni has posted: And This is my first post!!']
+
+['fadi has posted: hello world']
+
+['New has posted: This is my first post!']

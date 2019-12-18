@@ -1,0 +1,38 @@
+User:
+Name= jen
+Password= asd
+Email= jennyyy
+
+User:
+Name= Barak
+Password= my_very_own_password
+Email= barak@gmail.com
+
+User:
+Name= Roni
+Password= roni_password
+Email= roni@gmail.com
+
+User:
+Name= fadi
+Password= fadithebeast
+Email= fadi.muht04@gmail.com
+
+
+Barak is a friend of fadi
+User:
+Name= New
+Password= new_password
+Email= new@gmail.com
+
+
+Barak is a friend of New
+
+Shahar is a friend of New
+User:
+Name= shahar
+Password= 123123
+Email= shahar@gmail.com
+
+
+Barak is a friend of shahar
