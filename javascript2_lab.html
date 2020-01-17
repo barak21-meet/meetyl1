@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>DOM Lab</title>
+
+	<script type="text/javascript">
+		function update() {
+			document.getElementById("name").innerHTML="Barak";
+			document.getElementById("name").style.color="blue";
+			document.getElementById("age").innerHTML="15";
+			document.getElementById("favorite_food").innerHTML="Steak";
+			var site=document.getElementById("favorite_site");
+			site.innerHTML="MEET Labs";
+			site.href="http://ylmeet.herokuapp.com/";
+			var fav_word=document.creatElement("p");
+			fav_word.id="favorite_word";
+			document.getElementById("favorite_word").innerHTML="entrepreneurship"; //not fav subject but watching other ppl trying to say and spell it can be hilarious
+			document.getElementById("favorite_food").id="favorite_drink";
+			document.getElementsByClass("p").style.color="red";
+
+
+			
+
+		}
+
+	</script>
+	
+</head>
+<!-- DO NOT EDIT THE HTML BELOW -->
+<body>
+
+	<h2 id="name">My name</h2>
+	<p class="p" id="age">My age</p>
+	<p class="p" id="favorite_food">My favorite food</p>
+	<a id="favorite_site" href="https://www.google.com">google.com</a>
+
+	<br>
+	<button onclick="update()">Update my information</button>
+</body>
+</html>
