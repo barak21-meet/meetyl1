@@ -1,0 +1,230 @@
+#h1
+{
+	color: blue;
+	text-align:center;
+	font-size: 80px;
+
+}
+
+#special
+{
+	color:	black;
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+  	font-size: 60pt;
+	background-repeat: repeat-x;
+  	background-size: 8ch 100%;
+  	-webkit-text-fill-color: transparent;
+  	background-image: linear-gradient(to right, #57365a 0ch, Yellow 1ch, Indigo 1ch, Indigo 2ch, Blue 2ch, #2f732e 3ch, Orange 3ch, Orange 4ch, Violet 4ch, Violet 5ch, Green 5ch, Green 6ch, #5b2979 6ch, Red 7ch);
+}
+
+#special_text
+{
+    display:inline-block;
+    font-size: 72px;
+    background: linear-gradient(45deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size:100%;
+}
+
+#credit
+{
+	font-weight: bold;
+    display:inline-block;
+    font-size: 72px;
+    background: linear-gradient(45deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    text-align: center;
+
+    -webkit-animation: rainbowanim 10s ease infinite;
+       -moz-animation: rainbowanim 10s ease infinite;
+            animation: rainbowanim 10s ease infinite;
+}
+
+@-webkit-keyframes rainbowanim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes rainbowanim {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes rainbowanim { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+
+#button1
+{
+	background-color: green; 
+	border: double;
+	color: white;
+	padding: 20px 32px;
+  	text-align: center;
+  	font-size: 25px;
+  	border-radius: 12px;
+
+}
+
+#button2
+{
+	background-color: green; 
+	border: double;
+	color: white;
+	padding: 20px 32px;
+  	text-align: center;
+  	font-size: 25px;
+  	border-radius: 12px;
+}
+
+#b1
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+
+}
+
+#b2
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+
+}
+
+#b3
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+
+}
+
+#b4
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+
+}
+
+#b5
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+
+}
+
+#b6
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+
+}
+
+#b7
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+
+}
+
+#b8
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+
+}
+
+#b1:hover
+{
+	background-color: green;
+  	color: white;
+}
+
+#b2:hover
+{
+	background-color: black;
+  	color: white;
+}
+
+#b3:hover
+{
+	background-color: red;
+  	color:black;
+}
+
+#b4:hover
+{
+	background-color: blue;
+  	color: black;
+}
+
+#b5:hover
+{
+	background-color: white;
+  	color: black;
+}
+
+#b6:hover
+{
+	background-color: pink;
+  	color: red;
+}
+
+#b7:hover
+{
+	background-color: yellow;
+  	color: blue;
+}
+
+#b8:hover
+{
+	background-color: #10AC94;
+  	color: white;
+}
