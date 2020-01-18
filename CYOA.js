@@ -33,7 +33,7 @@ function option1()
 	}
 	else if(document.getElementById("button1").innerHTML=="About the invention of the computer")
 	{
-		document.getElementById("h1").innerHTML="The user now knows who invented the computer but he will definitely forget it by tomorrow so that was a waste of time. Instead you could have make global peace that will lass forever but it's never too late to do it, start now";
+		document.getElementById("h1").innerHTML="The user now knows who invented the computer but he will definitely forget it by tomorrow so making this project was a waste of time. Instead you could have make global peace that will last forever but it's never too late to do it, start now";
 		document.getElementById("button1").innerHTML="RESTART";
 		document.getElementById("button2").innerHTML="RESTART Please";
 	}
