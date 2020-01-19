@@ -85,6 +85,17 @@
   	border-radius: 12px;
 }
 
+#button3
+{
+	background-color: blue; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 32px;
+  	text-align: center;
+  	font-size: 25px;
+  	border-radius: 12px;
+}
+
 #b1
 {
 	float: left;
