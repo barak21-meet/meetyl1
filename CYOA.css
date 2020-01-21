@@ -21,7 +21,8 @@
 
 #special_text
 {
-    display:inline-block;
+    text-align: center;
+	display:inline-block;
     font-size: 72px;
     background: linear-gradient(45deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
     -webkit-background-clip: text;
@@ -44,18 +45,21 @@
        -moz-animation: rainbowanim 10s ease infinite;
             animation: rainbowanim 10s ease infinite;
 }
-
-@-webkit-keyframes rainbowanim {
+/*anim stands for animation*/
+@-webkit-keyframes rainbowanim
+{
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@-moz-keyframes rainbowanim {
+@-moz-keyframes rainbowanim
+{
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-@keyframes rainbowanim { 
+@keyframes rainbowanim
+{ 
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
@@ -192,6 +196,18 @@
 
 }
 
+#b9
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+
+}
+
 #b1:hover
 {
 	background-color: green;
@@ -238,4 +254,29 @@
 {
 	background-color: #10AC94;
   	color: white;
+}
+
+#b9:hover
+{
+	background-color: red;
+  	color: white;
+}
+
+#tip
+{
+	color: red;
+	text-align: center;
+	font-size: 26px;
+}
+
+#special:hover
+{
+	background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+
+#date
+{
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
 }

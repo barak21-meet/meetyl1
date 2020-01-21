@@ -156,7 +156,15 @@ function option3()
 		document.getElementById("button2").innerHTML="I'm not ready but you don't really give me another choice";
 		document.getElementById("image").src="let_the_games_began.png";
 	}
-	else if(document.getElementById("h1").innerHTML=="Too bad! you don't have a project and you should be sad about it! Now run before mjolnir gets you! The Ragnarok has began!"||document.getElementById("h1").innerHTML=="Great! choose your idea:")
+	else if (document.getElementById("h1").innerHTML=="Too bad! you don't have a project and you should be sad about it! Now run before mjolnir gets you! The Ragnarok has began!")
+	{
+		document.getElementById("h1").innerHTML="You cannot escape Ragnarok!!!";
+	}
+	else if(document.getElementById("h1").innerHTML=="You cannot escape Ragnarok!!!")
+	{
+		document.getElementById("h1").innerHTML="Ok I see that you really want to go back and make a project so I will allow you, but remember: you cannot escape the Ragnarok!";
+	}
+	else if(document.getElementById("h1").innerHTML=="Ok I see that you really want to go back and make a project so I will allow you, but remember: you cannot escape the Ragnarok!"||document.getElementById("h1").innerHTML=="Great! choose your idea:")
 	{
 		document.getElementById("h1").innerHTML="Do you want to make a project?";
 		document.getElementById("button1").innerHTML="YES Of course!";

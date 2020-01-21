@@ -6,6 +6,16 @@
 	<title>BNK CYOA</title>
 </head>
 <body bgcolor=33FF93>
+
+<p id="date"></p>
+<script>
+	n =  new Date();
+	y = n.getFullYear();
+	m = n.getMonth() + 1;
+	d = n.getDate();
+	document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
+</script> <!--This script will find and append the date in the page-->
+
 <div align="center">
 	<h1 id="h1">Welcome to your project maker in a "choose your own adventure" style.<br>Are you ready to start?</h1>
 	<button id="button1" onclick="option1()">Of course I'm ready! I'm always ready!</button>
@@ -14,20 +24,27 @@
 	<img id="image" src="let_the_games_began.png" width="600" height="400">
 	<br><br>
 	<button id="button3" onclick="option3()">Back</button>
-
 </div>
 <h1 id="credit">Made by: Barak Natan Kuchinsky</h1>
-<p><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br></p>
-<p id="special">I'm just making this very long text to make it look very good</p>
+<p id="tip">(Look down and you will find some easter eggs, search for more)<br>(Hint: search with the mouse pointer)</p>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p id="special">This is also an easter egg, good job for finding it!</p><!--This text won't be seen... (I'm not talking about this comment,I'm talking about the text inside this <p>)-->
 <p id="special_text">This is a nice extra easter egg that I made.<br>I'm glad you found it!</p>
+
 <button id="b1">Looks like</button>
 <button id="b2">you have</button>
 <button id="b3">found another</button>
 <button id="b4">easter egg</button>
 <button id="b5">That Barak</button>
 <button id="b6">made especially</button>
-<button id="b7">so you will</button>
-<button id="b8">be happy</button>
+<button id="b7">for you</button>
+<button id="b8">to find it</button>
+<button id="b9">and be happy</button>
+
 
 </body>
 </html>
+<!--Let's make it
+	50 lines so
+	I can say:
+	"I have 50 lines of HTML code!"-->
