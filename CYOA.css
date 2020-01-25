@@ -1,8 +1,21 @@
+@keyframes header_color
+{
+	from
+	{
+		color: #000080; /*or "navy"*/
+	}
+	to
+	{
+		color: blue; /*or "#0000FF"*/
+	}
+}
+
 #h1
 {
 	color: blue;
 	text-align:center;
 	font-size: 80px;
+	animation: header_color 1s linear 0s infinite alternate forwards;
 
 }
 
@@ -17,18 +30,37 @@
   	background-size: 8ch 100%;
   	-webkit-text-fill-color: transparent;
   	background-image: linear-gradient(to right, #57365a 0ch, Yellow 1ch, Indigo 1ch, Indigo 2ch, Blue 2ch, #2f732e 3ch, Orange 3ch, Orange 4ch, Violet 4ch, Violet 5ch, Green 5ch, Green 6ch, #5b2979 6ch, Red 7ch);
+
 }
 
 #special_text
 {
-    text-align: center;
+	text-align: center;
 	display:inline-block;
     font-size: 72px;
-    background: linear-gradient(45deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     background-size:100%;
 }
+
+@keyframes rainbow_bar_animation
+{
+	0%{background: linear-gradient(90deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);}
+	14.2857%{background: linear-gradient(90deg,#8B00FF,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082);}
+	28.5714%{background: linear-gradient(90deg,#4B0082,#8B00FF,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF);}
+	42.8571%{background: linear-gradient(90deg,#0000FF,#4B0082,#8B00FF,#FF0000,#FF7F00,#FFFF00,#00FF00);}
+	57.1428%{background: linear-gradient(90deg,#00FF00,#0000FF,#4B0082,#8B00FF,#FF0000,#FF7F00,#FFFF00);}
+	71.4285%{background: linear-gradient(90deg,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF,#FF0000,#FF7F00);}
+	85.7142%{background: linear-gradient(90deg,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF,#FF0000);}
+	100%{background: linear-gradient(90deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);}
+}
+
+#rainbow_bar
+{
+	padding: 20px 32px;
+	background: linear-gradient(90deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
+	text-indent: -9999px; /*sends the text away from sight. It exists but you can't see it because it's far away*/
+	
+}
+
 
 #credit
 {
@@ -45,19 +77,26 @@
        -moz-animation: rainbowanim 10s ease infinite;
             animation: rainbowanim 10s ease infinite;
 }
-/*anim stands for animation*/
+
+/*	anim stands for animation
+	The webkit and moz are vendor prefixes. webkit is for chrome (my home computer) and moz is for firefox (MEET computer).
+	They are used in case there is a feature that maybe isn't yet supported in all browsers, I used new things, so in order to make sure
+	that they would work for me, I made this
+*/
 @-webkit-keyframes rainbowanim
 {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
 @-moz-keyframes rainbowanim
 {
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
+
 @keyframes rainbowanim
 { 
     0%{background-position:0% 50%}
@@ -100,6 +139,8 @@
   	border-radius: 12px;
 }
 
+
+/*	Easter eggs (buttons)  */
 #b1
 {
 	float: left;
@@ -193,7 +234,7 @@
 	padding: 20px 95px;
   	text-align: center;
   	font-size: 25px;
-
+  	
 }
 
 #b9
@@ -212,54 +253,63 @@
 {
 	background-color: green;
   	color: white;
+
 }
 
 #b2:hover
 {
 	background-color: black;
   	color: white;
+
 }
 
 #b3:hover
 {
 	background-color: red;
   	color:black;
+
 }
 
 #b4:hover
 {
 	background-color: blue;
   	color: black;
+
 }
 
 #b5:hover
 {
 	background-color: white;
   	color: black;
+
 }
 
 #b6:hover
 {
 	background-color: pink;
   	color: red;
+
 }
 
 #b7:hover
 {
 	background-color: yellow;
   	color: blue;
+
 }
 
 #b8:hover
 {
 	background-color: #10AC94;
   	color: white;
+
 }
 
 #b9:hover
 {
 	background-color: red;
   	color: white;
+
 }
 
 #tip
@@ -267,6 +317,7 @@
 	color: red;
 	text-align: center;
 	font-size: 26px;
+
 }
 
 #special:hover
@@ -277,6 +328,23 @@
 #date
 {
 	color: red;
-	font-size: 20px;
+	font-size: 22px;
 	font-weight: bold;
+
 }
+
+#rainbow_bar:hover
+{
+	animation: rainbow_bar_animation 1.5s linear 0s infinite normal forwards;
+}
+
+/*	*The Hexadecimal things (#<0-9,A-F>) represents a certain color*
+	I
+	seriously
+	want it
+	to be
+	a CSS file
+	for my project
+	that has
+	exactly
+	350 lines*/

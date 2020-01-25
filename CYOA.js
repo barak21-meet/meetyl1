@@ -221,3 +221,5 @@ function option3()
 		document.getElementById("image").src="shop.png";
 	}
 }
+
+//In this file I have 225 lines of code that make the game work (changes the buttons's text and the question's text depending on the button and the progress)

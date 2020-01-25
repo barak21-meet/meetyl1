@@ -2,22 +2,22 @@
 <html>
 <head>
 	<link rel="stylesheet" type="text/css" href="CYOA.css">
-	<script type="text/javascript" src="CYOA.js"></script>
+	<script type="text/javascript" src="CYOA.js"></script> <!--This script includes the functions for the game buttons-->
 	<title>BNK CYOA</title>
 </head>
 <body bgcolor=33FF93>
-
+<div>
 <p id="date"></p>
-<script>
-	n =  new Date();
-	y = n.getFullYear();
-	m = n.getMonth() + 1;
-	d = n.getDate();
+<script>	
+	var n =  new Date();
+	var y = n.getFullYear();
+	var m = n.getMonth() + 1;
+	var d = n.getDate();
 	document.getElementById("date").innerHTML = d + "/" + m + "/" + y;
 </script> <!--This script will find and append the date in the page-->
-
+</div>
 <div align="center">
-	<h1 id="h1">Welcome to your project maker in a "choose your own adventure" style.<br>Are you ready to start?</h1>
+	<h1 id="h1">Welcome to your project maker in a<br>"choose your own adventure" style.<br>Are you ready to start?</h1>
 	<button id="button1" onclick="option1()">Of course I'm ready! I'm always ready!</button>
 	<button id="button2" onclick="option2()">I'm not ready but you don't really give me another choice</button>
 	<br><br>
@@ -25,26 +25,26 @@
 	<br><br>
 	<button id="button3" onclick="option3()">Back</button>
 </div>
-<h1 id="credit">Made by: Barak Natan Kuchinsky</h1>
-<p id="tip">(Look down and you will find some easter eggs, search for more)<br>(Hint: search with the mouse pointer)</p>
+<h1 id="credit">&#x26A1Made by: Barak Natan Kuchinsky&#x26A1</h1>
+<p id="tip">(Look down and you will find some easter eggs, search for more&#x1F916)<br>(Hint: search with the mouse pointer&#x1F61C)</p>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p id="rainbow_bar">This text will not be seen by the user so it doesn't matter what I write here...</p>
 <p id="special">This is also an easter egg, good job for finding it!</p><!--This text won't be seen... (I'm not talking about this comment,I'm talking about the text inside this <p>)-->
-<p id="special_text">This is a nice extra easter egg that I made.<br>I'm glad you found it!</p>
-
+<div><p id="special_text">	&#x26A1&#x26A1&#x26A1		<br>	&#x26A1&#x26A1&#x26A1		<br>	&#x26A1&#x26A1&#x26A1		<br>	&#x26A1&#x26A1&#x26A1		<br>	&#x26A1&#x26A1&#x26A1		<br>	&#x26A1&#x26A1&#x26A1		<br>	&#x26A1&#x26A1&#x26A1		<br>&#x26A1&#x26A1&#x26A1&#x26A1&#x26A1&#x26A1&#x26A1&#x26A1&#x26A1&#x26A1&#x26A1&#x26A1&#x26A1<br>&#x26A1I made a nice extra easter egg...&#x26A1<br>&#x26A1 I'm sure you can find it! &#x26A1<br>&#x26A1 Just do your best! &#x26A1<br>&#x26A1 Yes you can! &#x26A1<br>&#x26A1 I believe &#x26A1<br>&#x26A1in you&#x26A1<br>&#x26A1&#x2755&#x26A1<br>&#x26A1</p></div>
+<br>
 <button id="b1">Looks like</button>
 <button id="b2">you have</button>
-<button id="b3">found another</button>
+<button id="b3">found the</button>
 <button id="b4">easter egg</button>
-<button id="b5">That Barak</button>
+<button id="b5">that Barak</button>
 <button id="b6">made especially</button>
 <button id="b7">for you</button>
 <button id="b8">to find it</button>
 <button id="b9">and be happy</button>
 
-
 </body>
 </html>
-<!--Let's make it
-	50 lines so
-	I can say:
+<!--*All the hexadecimal things (x<1-9,A-F>) are the emojis (and other symbols) that you see in my page...*
+	Let's make it      **&#x1F5A4**
+	50 lines so I can say:
 	"I have 50 lines of HTML code!"-->
