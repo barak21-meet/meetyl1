@@ -1,0 +1,350 @@
+@keyframes header_color
+{
+	from
+	{
+		color: #000080; /*or "navy"*/
+		text-shadow:2px 2px navy;
+	}
+	to
+	{	
+		color: blue; /*or "#0000FF"*/
+		text-shadow:2px 2px #0000FF;
+	}
+}
+
+#h1
+{
+	color: blue;
+	text-align:center;
+	font-size: 80px;
+	animation: header_color 1s linear 0s infinite alternate forwards;
+}
+
+#special
+{
+	user-select: none;
+	color:	black;
+	font-weight: bold;
+	font-family: Verdana, Geneva, sans-serif;
+	text-align: center;
+  	font-size: 60pt;
+	background-repeat: repeat-x;
+  	background-size: 8ch 100%;
+  	-webkit-text-fill-color: transparent;
+  	background-image: linear-gradient(to right, #57365a 0ch, Yellow 1ch, Indigo 1ch, Indigo 2ch, Blue 2ch, #2f732e 3ch, Orange 3ch, Orange 4ch, Violet 4ch, Violet 5ch, Green 5ch, Green 6ch, #5b2979 6ch, Red 7ch);
+
+}
+
+#special_text
+{
+	text-align: center;
+	display:inline-block;
+    font-size: 72px;
+    background-size:100%;
+}
+
+@keyframes rainbow_bar_animation
+{
+	0%{background: linear-gradient(90deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);}
+	14.2857%{background: linear-gradient(90deg,#8B00FF,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082);}
+	28.5714%{background: linear-gradient(90deg,#4B0082,#8B00FF,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF);}
+	42.8571%{background: linear-gradient(90deg,#0000FF,#4B0082,#8B00FF,#FF0000,#FF7F00,#FFFF00,#00FF00);}
+	57.1428%{background: linear-gradient(90deg,#00FF00,#0000FF,#4B0082,#8B00FF,#FF0000,#FF7F00,#FFFF00);}
+	71.4285%{background: linear-gradient(90deg,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF,#FF0000,#FF7F00);}
+	85.7142%{background: linear-gradient(90deg,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF,#FF0000);}
+	100%{background: linear-gradient(90deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);}
+}
+
+#rainbow_bar
+{
+	padding: 20px 32px;
+	animation: rainbow_bar_animation 1.2s linear 0s infinite normal forwards;
+	text-indent: -9999px; /*sends the text away from sight. It exists but you can't see it because it's far away*/
+}
+
+#credit
+{
+	font-weight: bold;
+    display:inline-block;
+    font-size: 72px;
+    background: linear-gradient(45deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    text-align: center;
+    -webkit-animation: rainbowanim 10s ease infinite;
+       -moz-animation: rainbowanim 10s ease infinite;
+            animation: rainbowanim 10s ease infinite;
+}
+
+/*	anim stands for animation
+	The webkit and moz are vendor prefixes. webkit is for chrome (my home computer) and moz is for firefox (MEET computer).
+	They are used in case there is a feature that maybe isn't yet supported in all browsers, I used new things, so in order to make sure
+	that they would work for me, I made this
+*/
+@-webkit-keyframes rainbowanim
+{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@-moz-keyframes rainbowanim
+{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+@keyframes rainbowanim
+{ 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#button1
+{
+	background-color: green; 
+	border: double;
+	color: white;
+	padding: 20px 32px;
+  	text-align: center;
+  	font-size: 25px;
+  	border-radius: 12px;
+
+}
+
+#button2
+{
+	background-color: green; 
+	border: double;
+	color: white;
+	padding: 20px 32px;
+  	text-align: center;
+  	font-size: 25px;
+  	border-radius: 12px;
+  	
+}
+
+#button3
+{
+	background-color: blue; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 32px;
+  	text-align: center;
+  	font-size: 25px;
+  	border-radius: 12px;
+}
+
+
+/*	Easter eggs (buttons)  */
+#b1
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+}
+
+#b2
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+}
+
+#b3
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+}
+
+#b4
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+}
+
+#b5
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+}
+
+#b6
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+}
+
+#b7
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+}
+
+#b8
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+}
+
+#b9
+{
+	float: left;
+	background-color: #33FF93; 
+	border: double;
+	color: #33FF93;
+	padding: 20px 95px;
+  	text-align: center;
+  	font-size: 25px;
+}
+@keyframes glow
+{
+	from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;}
+  	to {text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;}
+ }
+
+#b1:hover
+{
+	background-color: green;
+  	color: white;
+  	animation: glow 1s ease-in-out 0s infinite alternate;
+}
+
+#b2:hover
+{
+	background-color: black;
+  	color: white;
+  	animation: glow 1s ease-in-out 0s infinite alternate;
+}
+
+#b3:hover
+{
+	background-color: red;
+  	color:black;
+  	animation: glow 1s ease-in-out 0s infinite alternate;
+}
+
+#b4:hover
+{
+	background-color: blue;
+  	color: black;
+  	animation: glow 1s ease-in-out 0s infinite alternate;
+}
+
+#b5:hover
+{
+	background-color: white;
+  	color: black;
+  	animation: glow 1s ease-in-out 0s infinite alternate;
+}
+
+#b6:hover
+{
+	background-color: pink;
+  	color: red;
+  	animation: glow 1s ease-in-out 0s infinite alternate;
+}
+
+#b7:hover
+{
+	background-color: yellow;
+  	color: blue;
+  	animation: glow 1s ease-in-out 0s infinite alternate;
+}
+
+#b8:hover
+{
+	background-color: #10AC94;
+  	color: white;
+  	animation: glow 1s ease-in-out 0s infinite alternate;
+}
+
+#b9:hover
+{
+	background-color: red;
+  	color: white;
+  	animation: glow 1s ease-in-out 0s infinite alternate;
+}
+
+#tip
+{
+	color: red;
+	text-align: center;
+	font-size: 26px;
+}
+
+#special:hover
+{
+	background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
+}
+
+@keyframes date_color
+{
+	from
+	{
+		color: red;
+	}
+	to
+	{
+		color: #D60000;
+	}
+}
+
+#date
+{
+	animation: date_color 1s linear 0s infinite alternate forwards;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "Times New Roman", Times, serif;
+}
+
+/*	*The Hexadecimal things (#<0-9,A-F>) represents a certain color*
+	I seriously
+	want it
+	to be
+	a CSS file
+	for my project
+	that has
+	exactly
+	350 lines*/
