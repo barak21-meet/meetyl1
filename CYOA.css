@@ -3,10 +3,12 @@
 	from
 	{
 		color: #000080; /*or "navy"*/
+		text-shadow:2px 2px navy;
 	}
 	to
-	{
+	{	
 		color: blue; /*or "#0000FF"*/
+		text-shadow:2px 2px #0000FF;
 	}
 }
 
@@ -16,11 +18,11 @@
 	text-align:center;
 	font-size: 80px;
 	animation: header_color 1s linear 0s infinite alternate forwards;
-
 }
 
 #special
 {
+	user-select: none;
 	color:	black;
 	font-weight: bold;
 	font-family: Verdana, Geneva, sans-serif;
@@ -56,11 +58,9 @@
 #rainbow_bar
 {
 	padding: 20px 32px;
-	background: linear-gradient(90deg,#FF0000,#FF7F00,#FFFF00,#00FF00,#0000FF,#4B0082,#8B00FF);
+	animation: rainbow_bar_animation 1.2s linear 0s infinite normal forwards;
 	text-indent: -9999px; /*sends the text away from sight. It exists but you can't see it because it's far away*/
-	
 }
-
 
 #credit
 {
@@ -72,7 +72,6 @@
     -webkit-text-fill-color: transparent;
     background-size: 400% 400%;
     text-align: center;
-
     -webkit-animation: rainbowanim 10s ease infinite;
        -moz-animation: rainbowanim 10s ease infinite;
             animation: rainbowanim 10s ease infinite;
@@ -104,7 +103,6 @@
     100%{background-position:0% 50%}
 }
 
-
 #button1
 {
 	background-color: green; 
@@ -126,6 +124,7 @@
   	text-align: center;
   	font-size: 25px;
   	border-radius: 12px;
+  	
 }
 
 #button3
@@ -150,7 +149,6 @@
 	padding: 20px 95px;
   	text-align: center;
   	font-size: 25px;
-
 }
 
 #b2
@@ -162,7 +160,6 @@
 	padding: 20px 95px;
   	text-align: center;
   	font-size: 25px;
-
 }
 
 #b3
@@ -174,7 +171,6 @@
 	padding: 20px 95px;
   	text-align: center;
   	font-size: 25px;
-
 }
 
 #b4
@@ -186,7 +182,6 @@
 	padding: 20px 95px;
   	text-align: center;
   	font-size: 25px;
-
 }
 
 #b5
@@ -198,7 +193,6 @@
 	padding: 20px 95px;
   	text-align: center;
   	font-size: 25px;
-
 }
 
 #b6
@@ -210,7 +204,6 @@
 	padding: 20px 95px;
   	text-align: center;
   	font-size: 25px;
-
 }
 
 #b7
@@ -222,7 +215,6 @@
 	padding: 20px 95px;
   	text-align: center;
   	font-size: 25px;
-
 }
 
 #b8
@@ -234,7 +226,6 @@
 	padding: 20px 95px;
   	text-align: center;
   	font-size: 25px;
-  	
 }
 
 #b9
@@ -246,70 +237,74 @@
 	padding: 20px 95px;
   	text-align: center;
   	font-size: 25px;
-
 }
+@keyframes glow
+{
+	from {text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;}
+  	to {text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;}
+ }
 
 #b1:hover
 {
 	background-color: green;
   	color: white;
-
+  	animation: glow 1s ease-in-out 0s infinite alternate;
 }
 
 #b2:hover
 {
 	background-color: black;
   	color: white;
-
+  	animation: glow 1s ease-in-out 0s infinite alternate;
 }
 
 #b3:hover
 {
 	background-color: red;
   	color:black;
-
+  	animation: glow 1s ease-in-out 0s infinite alternate;
 }
 
 #b4:hover
 {
 	background-color: blue;
   	color: black;
-
+  	animation: glow 1s ease-in-out 0s infinite alternate;
 }
 
 #b5:hover
 {
 	background-color: white;
   	color: black;
-
+  	animation: glow 1s ease-in-out 0s infinite alternate;
 }
 
 #b6:hover
 {
 	background-color: pink;
   	color: red;
-
+  	animation: glow 1s ease-in-out 0s infinite alternate;
 }
 
 #b7:hover
 {
 	background-color: yellow;
   	color: blue;
-
+  	animation: glow 1s ease-in-out 0s infinite alternate;
 }
 
 #b8:hover
 {
 	background-color: #10AC94;
   	color: white;
-
+  	animation: glow 1s ease-in-out 0s infinite alternate;
 }
 
 #b9:hover
 {
 	background-color: red;
   	color: white;
-
+  	animation: glow 1s ease-in-out 0s infinite alternate;
 }
 
 #tip
@@ -317,7 +312,6 @@
 	color: red;
 	text-align: center;
 	font-size: 26px;
-
 }
 
 #special:hover
@@ -325,17 +319,23 @@
 	background-image: repeating-radial-gradient(red, yellow 10%, green 15%);
 }
 
-#date
+@keyframes date_color
 {
-	color: red;
-	font-size: 22px;
-	font-weight: bold;
-
+	from
+	{
+		color: red;
+	}
+	to
+	{
+		color: #D60000;
+	}
 }
 
-#rainbow_bar:hover
+#date
 {
-	animation: rainbow_bar_animation 1.5s linear 0s infinite normal forwards;
+	animation: date_color 1s linear 0s infinite alternate forwards;
+	font-size: 22px;
+	font-weight: bold;
 }
 
 /*	*The Hexadecimal things (#<0-9,A-F>) represents a certain color*
