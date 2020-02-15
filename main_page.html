@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" type="text/css" href="main_page.css">
-  <script type="text/javascript" src="main_page.js"></script>
+  <!--<script type="text/javascript" src="main_page.js"></script> -->
   <title>The Main Page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,27 +14,30 @@
 <body> 
  
 <div class="container">
-  <h1 id="title">Card Deck</h1>
-  <p>The .card-deck class creates an <strong>equal height and width</strong> grid of cards. The layout will automatically adjust as you insert more cards.</p>
-  <p>In this example we have added extra content to the first card, to make it taller. Notice how the other cards follow.</p>
-  <p><strong>Note:</strong> The cards are displayed vertically on small screens (less than 576px):</p>
+  <h1 id="title">&#x1F31A;&#x1F61C;&#x26A1;<span id="project_name">CMB</span>&#x26A1;&#x1F61C;&#x1F31A;</h1>
+  <br>
+  <p id="instruction">Pick a service from the following options:</p>
+  <br>
   <div class="card-deck">
-    <div class="card bg-danger"> <!--bg-danger == red -->
-      <div class="card-body text-center">
-        <p class="card-text">Some text inside the first card</p>
-        <p class="card-text">Some more text to increase the height</p>
-        <p class="card-text">Some more text to increase the height</p>
-        <p class="card-text">Some more text to increase the height</p>
-      </div>
+    <a href="./time_choose_celine.html" style="text-decoration: none"><div class="card bg-danger"> <!--bg-danger == red -->
+      <div class="card-body"> <!--If I want all text to be in the middle, add text-center inside the class (a space after card-body)-->
+        <p class="card-text" id="time_title">Time Management</p>
+        <p class="card-text" id="time_image"><image src="time.jpg" height="140" width="220"></p>
+        <p class="card-text" id="time_question">Do you find it hard to orginize your time?<br>Do you feel as if you are too busy to do what you want to do?</p>
+        <p class="card-text" id="time_answer"><br>We are here to help!<br>Help us help you orginize your time in the best way!</p>
+      </div></a>
     </div>
     <div class="card bg-warning"> <!--bg-warning == yellow -->
-      <div class="card-body text-center">
-        <p class="card-text">Some text inside the second card</p>
+      <div class="card-body">
+        <p class="card-text" id="food_title">Food Picker</p>
+        <p class="card-text" id="food_image"><image src="food.png" height="140" width="220"></image>
+        <p class="card-text" id="food_question">Do you feel like you can't choose what to eat?</p>
+        <p class="card-text" id="food_answer"><br>We have a solution especially for you!<br>Try out our Food Picker!<br>We will help you pick your next tasty meal!</p>
       </div>
     </div>
     <div class="card bg-success"> <!--bg-success == green -->
       <div class="card-body text-center">
-        <p class="card-text">Some text inside the third card</p>
+        <p class="card-text" id="empty">Some text inside the third card</p>
       </div>
     </div>
     <div class="card bg-info"> <!--bg-info == light blue -->
